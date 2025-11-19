@@ -12,11 +12,11 @@ pipeline {
     stage('Install') {
       steps {
         dir('frontend') {
-          // AQUÍ va el código que te puse
-          bat 'npm ci --loglevel verbose'
+          bat 'npm install --loglevel verbose'
         }
       }
     }
+
 
     stage('Build') {
       steps {
