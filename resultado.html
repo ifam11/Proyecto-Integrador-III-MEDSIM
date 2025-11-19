@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificar Ropas</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <!--LProvide option to upload another image -->
+    <a href="/">Upload another image</a>
+
+    <p>The predicted label for the uploaded image is: {{ result_label }}</p>
+
+    <!-- Display the predicted iamge-->
+    <img src="{{ url_for('static', filename='predicted_image.png' + filename) }}" alt="Imagen subida" style="max-width:300px; max-height:300px;">
+</body>
+</html>
