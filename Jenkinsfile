@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  tools { nodejs 'Node20' }
+  //tools { nodejs 'Node20' }
 
   stages {
     stage('Checkout') {
